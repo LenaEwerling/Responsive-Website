@@ -1,0 +1,164 @@
+$first-color: #A5BBF5;
+$second-color: #5379E2;
+$third-color: #010D30;
+$orange-color: #FFC54A;
+
+.colored {
+    color: $second-color;
+}
+
+body {
+    background-color: $third-color;
+}
+
+#bg {
+    width: 100%;
+    margin-top: 65px;
+}
+
+nav {
+    border: 1px solid black;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: $second-color;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    color: $second-color;
+}
+
+.searching {
+    margin-top: 10px;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+
+    #suche {
+        margin: 10px;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: $first-color;
+    padding: 5px 5px;
+    margin-bottom: 20px;
+}
+
+#start {
+    position: relative;
+    /*background-image: url(Bilder/bg-bild.jpg);*/
+    background: linear-gradient(135deg, black, #555);
+    color: $second-color;
+    margin-top: 60px;
+    text-align: center;
+    padding: 2rem 2rem;
+
+    h1, .lead {
+        color: $orange-color;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+.round {
+    border-radius: 7px;
+}
+
+/* Hauptteil */
+
+
+@media (max-width: 575px){
+
+    .box-inhalt {
+        flex-basis: 100%;
+        order: 1;
+        width: 100%;
+    }
+
+    .box-trennung {
+        display: none;
+    }
+
+    .box-navigation {
+        display: none;
+    }
+
+    #kleineNavigation {
+        display: flex;
+    }
+}
+
+@media (min-width: 576px){
+
+    #kleineNavigation{
+        display: none;
+    }
+}
+
+.Halterung {
+    max-width: 1000px;
+    width: 90%;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.contain {
+    background-color: $first-color;
+    margin-bottom: 10px;
+
+    section {
+        background-color: black;
+        color: $first-color;
+        padding: 5px;
+        text-align: justify;
+        padding-bottom: 0px;
+    }
+
+    .carousel-caption {
+        background-color: $third-color;
+        opacity: 0.5;
+        color: white;
+        line-height: 0.8;
+        margin-bottom: 0;
+
+        h5, p {
+            opacity: 1;
+        }
+    }
+
+
+}
+
+
+    .box-navigation {
+        flex-basis: 200px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        background-color: $first-color;
+    }
+    
+    .box-inhalt {
+        flex-basis: 0px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: $first-color;
+        padding: 5px 5px;
+    }
+    
+    .box-trennung {
+        flex-basis: 20px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
